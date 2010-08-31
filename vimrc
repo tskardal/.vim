@@ -9,6 +9,7 @@ set nocompatible
 set number
 
 filetype plugin indent on
+filetype plugin on
 
 "save using sudo
 cmap w!! %!sudo tee > /dev/null %
@@ -27,3 +28,7 @@ map <leader>b :FuzzyFinderBuffer<CR>
 map <leader>t :FuzzyFinderTextMate<CR>
 map <leader>' :FuzzyFinderTextMate<CR>
 
+"custom key mappings
+map <C-F12> :!ctags -R --sort=yes --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
+nnoremap <silent> <F8> :TlistToggle<CR>
+nnoremap <silent> <F9> :NERDTreeToggle<CR>
