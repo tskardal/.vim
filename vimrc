@@ -7,6 +7,7 @@ syntax on
 set backspace=2
 set nocompatible
 set number
+set guifont=Consolas\ bold:h14
 
 filetype plugin indent on
 filetype plugin on
